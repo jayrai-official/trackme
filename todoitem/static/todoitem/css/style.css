@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+}
+
+/* ############# header */
+.nav{
+    height: 10vh;
+    color: rgb(101 254 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+    border-bottom: 1px solid rgb(101 254 218);
+}
+
+/* ############# main */
+.container-fluid{
+    color: rgb(205 214 247);
+    display: flex;
+    justify-content: center;
+}
+
+.task-box{
+    border-radius: 10px;
+    margin: 3%;
+    min-height: 73vh;
+    min-width: 50%;
+}
+
+.add-task{
+    color: rgb(101 254 218);
+    border: 1px solid rgb(205 214 247);
+    border-top: none;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px 10px 80px;
+}
+
+.add-task form input,.task form input{
+ color: rgb(101 254 218);
+ border: none;
+ border-bottom: 1px solid rgb(101 254 218);
+ width: 80%;
+ padding-left: 10px;
+}
+
+.add-task form button,.task form button{
+    width: 6%;
+    padding: 5px;
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(101 254 218);
+}
+
+button i{
+    background-color: rgb(101 254 218);
+    color: #000;
+}
+
+.task-head{
+    background-color: rgb(101 254 218);
+    color: #000;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    font-size: 2rem;
+    border-top-left-radius: 10px;
+}
+
+.task-list{
+    border: 1px solid rgb(205 214 247);
+    min-height: 51vh;
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.task{
+    padding-bottom: 2px;
+}
+
+
+
+/* ############# footer */
+.footer-line{
+    color: rgb(101 254 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(101 254 218);
+}
+
+/* ============================ mobile view ================================ */
+@media only screen and (max-width: 600px) {
+    form {
+        padding: 20px 10px 10px 20px;
+    }
+
+    .add-task form button,.task form button{
+        width: 15%;
+    }
+  }
